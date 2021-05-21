@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Calculator</title>
+    <script>
+        function calc(result){
+            form.displayResult.value=form.displayResult.value+result;
+        }
+    </script>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        margin-left: 600px;
+        margin-top: 130px;
+        width: 230px;
+        height: 400px;
+        background-color:darkslateblue;
+        padding: 30px;
+    }
+    .dip{
+        width: 200px;
+        text-align: end;
+        background-color: rgb(10, 140, 145);
+    }
+    body{
+        background-image: url(good.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    input{
+        padding: 7px;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        text-align: center;
+        outline: none;
+        border: 3px solid white;
+        border-radius: 3px;
+        
+        
+    }
+    input:hover{
+        background-color:  chartreuse;
+    }
+ 
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>My Calculator</h2>
+        <div class="cont">
+            <form action=""  name="form">
+                <div class="display">
+                    <input class="dip" type="text" placeholder="0" name="displayResult">
+                </div>
+                <div class="btn">
+                    <input type="reset" class="two" name="clear" value="C">
+                    <input type="reset" class="two" name="clear" value="X">
+                    <br>
+                    <input type="button" name="a1" value="1" onclick="calc(a1.value)">
+                    <input type="button" name="a2" value="2"onclick="calc(a2.value)">
+                    <input type="button" name="a3" value="3"onclick="calc(a3.value)">
+                    <input type="button" name="plus" value="+" onclick="calc(plus.value)"><br>
+                    <input type="button" name="a4" value="4" onclick="calc(a4.value)">
+                    <input type="button" name="a5" value="5"onclick="calc(a5.value)">
+                    <input type="button" name="a6" value="6"onclick="calc(a6.value)">
+                    <input type="button" name="sub" value="-"onclick="calc(sub.value)"><br>
+                    <input type="button" name="a7" value="7"onclick="calc(a7.value)">
+                    <input type="button" name="a8" value="8"onclick="calc(a8.value)">
+                    <input type="button" name="a9" value="9"onclick="calc(a9.value)">
+                    <input type="button" name="division" value="/" onclick="calc(division.value)"><br>
+                    <input type="button" name="mul" value="*"onclick="calc(mul.value)">
+                    <input type="button" name="a0" value="0"onclick="calc(a0.value)">
+                    <input type="button" name="ad" value="."onclick="calc(ad.value)">
+                    <input type="button" name="eq" value="=" onclick="displayResult.value=eval(displayResult.value)">
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    width: 100%;
+    background: linear-gradient(to right,  #576758, #f80449);
+
+}
+img{
+    height: 370px;
+    margin: 4px;
+    width: 300px;
+}
+.imageC{
+    float: left;
+    height: 960px;
+    background: linear-gradient(to right, #576758, #57e778)
+
+}
+.info{
+    background-color: rgb(9, 241, 106);
+    padding: 9px;
+}
+.pi{
+    font-size: 20px;
+}
